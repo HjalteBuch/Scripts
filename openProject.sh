@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the directories to search
-PROJECT_DIRS=("$HOME/Projects" "$HOME/.config" "$HOME/Dotfiles/alacritty/.config/" "$HOME/Dotfiles/tmux/.config/" "$HOME/Dotfiles/nvim/.config/")
+PROJECT_DIRS=("$HOME/Projects" "$HOME/.config" "$HOME/Dotfiles/alacritty/.config/alacritty" "$HOME/Dotfiles/tmux/.config/tmux" "$HOME/Dotfiles/nvim/.config/nvim")
 
 # Find directories within the specified project directories
 SELECTED_DIR=$(find "${PROJECT_DIRS[@]}" -maxdepth 1 -type d | fzf --tmux)
